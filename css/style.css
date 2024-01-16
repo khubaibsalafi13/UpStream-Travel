@@ -29,6 +29,26 @@
     align-items: center;
 }
 
+
+.main_overlay{
+    position: relative;
+    z-index: 1;
+ 
+}
+
+.main_overlay:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 11, 11, .3);
+    border-radius: 10px;
+    
+}
+
 .logo h2{
     color:var(--boldcolor) ;
     font-size: 36px;
@@ -66,3 +86,89 @@
 
 }
 
+
+.hero .container{
+    margin-top: 49px;
+}
+
+.hero-img{
+    border-radius: 10px;
+    background: url('../Images/heroimage.png')no-repeat center/cover;
+    padding: 150px 120px;
+
+}
+
+.hero-title{
+    text-align: center;
+    margin-bottom: 64px;
+   
+}
+
+.hero-title h1{
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.hero-title p{
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 24px;
+}
+
+.hero-form-main{
+    text-align: center;
+
+}
+.hero-form{
+    position: relative;
+}
+
+.hero-form form{
+    text-align:center ;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translatex(-50%);
+    width: 500px;
+    height: 80px;
+    padding: 2% 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: black;
+}
+
+.hero-form input,select{
+    width: 20%;
+    padding: 10px 12px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.hero-form a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 9px 12px;
+    background-color: var(--brandcolor);
+    color: #ffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border-radius: 3px
+}
+
+.hero-form i{
+    color: #FFF;
+    font-size: 16px;
+}
